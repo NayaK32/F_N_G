@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sending Love </title>
+    <title>Sending Love to My Family</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        // Function to show a section and hide others
         function showSection(sectionId) {
             document.getElementById('home').style.display = 'none';
             document.getElementById('flowers').style.display = 'none';
@@ -14,7 +13,6 @@
             document.getElementById(sectionId).style.display = 'block';
         }
 
-        // Function to display the modal with the enlarged image
         function openModal(imageSrc) {
             const modal = document.getElementById('imageModal');
             const modalImg = document.getElementById('modalImg');
@@ -22,23 +20,21 @@
             modalImg.src = imageSrc;
         }
 
-        // Function to close the modal
         function closeModal() {
             document.getElementById('imageModal').style.display = 'none';
         }
     </script>
 </head>
 <body>
-    <!-- Home Section -->
     <div id="home">
         <header>
-            <h1>Sending Love to My Rimiiiee</h1>
+            <h1>Sending Love to My Rimiii</h1>
         </header>
         <main>
-            <p>Dear Rimiiee, I’m sending you all my Love 😘 . Choose the Surprise !</p>
+            <p>DearRimiii, I’m sending you all my love. Choose the Surprise!</p>
             <div class="buttons">
-                <button class="button" onclick="showSection('flowers')">Surprise 1 😗</button>
-                <button class="button" onclick="showSection('hug')">Surprise 2 😚</button>
+                <button class="button" onclick="showSection('flowers')">Receive Flowers</button>
+                <button class="button" onclick="showSection('hug')">Receive a Hug</button>
             </div>
         </main>
     </div>
@@ -46,16 +42,16 @@
     <!-- Flowers Section -->
     <div id="flowers" style="display: none;">
         <header>
-            <h1>Beautiful Flowers for You!</h1>
+            <h1>Beautiful Flowers for You my Love ❤️!</h1>
         </header>
         <main>
-            <p>Here are some beautiful flowers just for you. 🌸🌺🌼</p>
+            <p>Here are some beautiful flowers just for you my cutuuu. 🌸🌺🌼</p>
             <div class="flowers">
                 <!-- Flower Image -->
-                <img src="/all/f1.jpg" alt="Flower 1" onclick="openModal(this.src)">
+                <img src="all/f1.jpg" alt="Flower 1" onclick="openModal(this.src)">
                 <!-- GIFs -->
-                <img src="/all/f2.gif" alt="Flower GIF 1" onclick="openModal(this.src)">
-                <img src="/all/f3.gif" alt="Flower GIF 2" onclick="openModal(this.src)">
+                <img src="all/f2.gif" alt="Flower GIF 1" onclick="openModal(this.src)">
+                <img src="all/f3.gif" alt="Flower GIF 2" onclick="openModal(this.src)">
             </div>
             <button class="button" onclick="showSection('home')">Back to Choices</button>
         </main>
@@ -68,7 +64,8 @@
         </header>
         <main>
             <p>Sending a big virtual hug your way! 🤗</p>
-            <img src="/all/h1.gif" alt="Virtual Hug" class="hug-image" onclick="openModal(this.src)">
+            <!-- GIF -->
+            <img src="all/h1.gif" alt="Virtual Hug" class="hug-image" onclick="openModal(this.src)">
             <button class="button" onclick="showSection('home')">Back to Choices</button>
         </main>
     </div>
@@ -79,9 +76,8 @@
         <img class="modal-content" id="modalImg">
     </div>
 
-    <!-- Footer Section -->
     <footer>
-        <p>Made with ❤️ by Yours & only Yours Omieeeee</p>
+        <p>Made with ❤️ by Yours and only Yours "Omieeeee"</p>
     </footer>
 </body>
 </html>
