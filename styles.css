@@ -60,14 +60,14 @@ main {
 }
 
 .flowers img {
-    width: 150px;
+    width: 150px; /* Adjust size as needed */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hug-image {
-    width: 200px;
+    width: 200px; /* Adjust size as needed */
     height: auto;
     margin-top: 20px;
     border-radius: 10px;
@@ -77,3 +77,34 @@ main {
 footer {
     margin-top: 30px;
 }
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
