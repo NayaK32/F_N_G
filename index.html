@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Love to My Family</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Function to show a section and hide others
+        function showSection(sectionId) {
+            // Hide all sections
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('flowers').style.display = 'none';
+            document.getElementById('hug').style.display = 'none';
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <!-- Home Section -->
+    <div id="home">
+        <header>
+            <h1>Sending Surprises to my Rimiiieee</h1>
+        </header>
+        <main>
+            <p>Showing my love and care by sending flowers and a virtual hug to you 🥺 !</p>
+            <div class="buttons">
+                <button class="button" onclick="showSection('flowers')">Surprise 1 🫠</button>
+                <button class="button" onclick="showSection('hug')">Surprise 2 😋 </button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Flowers Section -->
+    <div id="flowers" style="display: none;">
+        <header>
+            <h1>Sending Flowers </h1>
+        </header>
+        <main>
+            <p>Some Beautiful Flowers for you my Love :</p>
+            <div class="flowers">
+                <img src="f1.jpg" alt="Flower 1">
+                <img src="flower2.jpg" alt="Flower 2">
+                <img src="flower3.jpg" alt="Flower 3">
+            </div>
+            <button class="button" onclick="showSection('home')">Back to Home</button>
+        </main>
+    </div>
+
+    <!-- Hug Section -->
+    <div id="hug" style="display: none;">
+        <header>
+            <h1>Sending Hug </h1>
+        </header>
+        <main>
+            <p>Sending a warm hug to my family!</p>
+            <img src="hug.png" alt="Virtual Hug" class="hug-image">
+            <button class="button" onclick="showSection('home')">Back to Home</button>
+        </main>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Made with ❤️ by Yours and only Yours Omieee</p>
+    </footer>
+</body>
+</html>
